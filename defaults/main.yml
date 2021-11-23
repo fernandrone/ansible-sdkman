@@ -60,3 +60,8 @@ sdkman_offline_mode: false
 # Link SDKMAN installed packages
 # Reference: https://linux.die.net/man/8/update-alternatives
 sdkman_update_alternatives: []
+
+# Update the permissions of the sdkman directory to match the sdkman_user. This
+# might cause a recursion error if sdkman has been installed previously and a
+# candidate is set since sdkman.
+sdkman_fix_permissions: false

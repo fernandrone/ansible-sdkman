@@ -43,7 +43,6 @@
   set_fact:
     sdkman_dir: '{{ sdkman_dir | default(sdkman_user_home_dir.stdout + "/.sdkman") }}'
 
-
 # Alpine Linux requires GLIBC
 - block:
     - name: Install GLIBC for Alpine Linux
@@ -90,3 +89,4 @@
   become: yes
   tags:
     - sdkman_privilege
+  when: '{{ sdkman_fix_permissions }}'
