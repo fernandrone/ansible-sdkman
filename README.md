@@ -1,4 +1,4 @@
-Ansible Role: Comcast.sdkman
+Ansible Role: fernandrone.ansible_sdkman
 ============================
 
 [![Galaxy Role][badge-role]][link-galaxy]
@@ -41,7 +41,7 @@ Here's an example!
 ```yaml
 - hosts: servers
   roles:
-    - role: Comcast.sdkman
+    - role: fernandrone.ansible_sdkman
       sdkman_user: vagrant
       sdkman_group: vagrant
       sdkman_auto_answer: true
@@ -75,6 +75,7 @@ Here's an example!
         - candidate: java
           name: javac
           link: /usr/bin/javac
+      sdkman_fix_permissions: false
 ```
 
 Additional Notes
